@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "name": "pro-luce-maintenance",
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path((?!favicon\\.svg|style\\.css$).+)",
+      "destination": "/",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

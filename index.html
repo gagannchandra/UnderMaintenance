@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro-Luce Lighting - Under Maintenance</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>
+    // Redirect any subpath to root /
+    if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+      window.history.replaceState(null, '', '/');
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="card-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-inner">
+          <div class="logo">
+            <span class="logo-box">PRO -</span>
+            <span class="logo-text">LUCE</span>
+          </div>
+          <button id="open-game-btn" class="game-trigger-btn">
+            <span class="btn-icon">🎮</span> Play Mini-Game
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <h1 class="headline">
+          The site is currently<br>
+          down for maintenance
+        </h1>
+        
+        <p class="subtitle">
+          Pro-Luce Lighting is currently undergoing scheduled system updates.<br>
+          We apologize for any inconvenience caused.
+        </p>
+
+        <!-- Illustration (Clickable Game Trigger) -->
+        <div class="illustration-container" title="Click plugs to play mini-game!">
+          <svg class="plug-illustration" viewBox="0 0 600 200" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- LEFT BLUE CABLE (Extends infinitely left) -->
+            <!-- Light Cyan outer cable -->
+            <path d="M-2000 90 H110 C126 90 135 99 135 115 V115 C135 131 144 140 160 140 H210" stroke="#BCE3F7" stroke-width="14" stroke-linecap="square"/>
+            <!-- Cyan Blue inner cable step -->
+            <path d="M110 90 H115 C131 90 135 99 135 115 V115 C135 131 144 140 160 140 H210" stroke="#009FE3" stroke-width="14" stroke-linecap="square"/>
+
+            <!-- Left Male Plug Group (Animated Pulse) -->
+            <g class="plug-left">
+              <!-- Main rear block -->
+              <rect x="200" y="115" width="36" height="42" rx="5" fill="#0077E6"/>
+              <!-- Front block lighter blue -->
+              <rect x="236" y="106" width="38" height="60" rx="8" fill="#009FE3"/>
+              <!-- Inner accent blocks -->
+              <rect x="236" y="106" width="19" height="30" rx="5" fill="#42C0FB"/>
+              <rect x="255" y="136" width="19" height="30" rx="5" fill="#0052CC"/>
+              <rect x="216" y="115" width="20" height="22" rx="4" fill="#1DA1F2"/>
+
+              <!-- Plug Prongs -->
+              <rect x="274" y="117" width="26" height="10" rx="3" fill="#009FE3"/>
+              <rect x="274" y="145" width="26" height="10" rx="3" fill="#0052CC"/>
+
+              <!-- Spark particles Left (Floating inside safe padding) -->
+              <g class="spark-left">
+                <path d="M282 82 A 12 12 0 0 1 294 70 H294 V82 Z" fill="#009FE3"/>
+                <rect x="282" y="168" width="12" height="12" rx="3" fill="#BCE3F7"/>
+              </g>
+            </g>
+
+
+            <!-- RIGHT GREEN CABLE (Extends infinitely right) -->
+            <!-- Bright Green Cable -->
+            <path d="M2600 90 H490 C474 90 465 99 465 115 V115 C465 131 456 140 440 140 H390" stroke="#00E65C" stroke-width="14" stroke-linecap="square"/>
+            <path d="M490 90 H485 C469 90 465 99 465 115 V115 C465 131 456 140 440 140 H390" stroke="#00C853" stroke-width="14" stroke-linecap="square"/>
+
+            <!-- Right Female Socket Group (Animated Pulse) -->
+            <g class="plug-right">
+              <!-- Main rear block -->
+              <rect x="364" y="115" width="36" height="42" rx="5" fill="#008A38"/>
+              <!-- Front block bright green -->
+              <rect x="326" y="106" width="38" height="60" rx="8" fill="#00E65C"/>
+              <!-- Inner accent blocks -->
+              <rect x="326" y="106" width="19" height="30" rx="5" fill="#66FFA6"/>
+              <rect x="345" y="136" width="19" height="30" rx="5" fill="#00B848"/>
+              <rect x="364" y="115" width="20" height="22" rx="4" fill="#00A832"/>
+
+              <!-- Socket Opening -->
+              <rect x="319" y="120" width="7" height="32" rx="2" fill="#005824"/>
+
+              <!-- Spark particles Right (Floating inside safe padding) -->
+              <g class="spark-right">
+                <path d="M318 82 A 12 12 0 0 0 306 70 H306 V82 Z" fill="#00E65C"/>
+                <rect x="306" y="165" width="12" height="12" rx="3" fill="#008A38"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="contact-info">
+            <span class="contact-label">Pro-Luce Architecture:</span>
+            <span class="contact-item">
+              <span class="item-label">Address:</span>
+              <span class="item-address">Via della Luce 24, 20121 Milano, Italy</span>
+            </span>
+            <span class="contact-item">
+              <span class="item-label">Phone:</span>
+              <a href="tel:+390212345678" class="item-value">+39 02 1234 5678</a>
+            </span>
+            <span class="contact-item">
+              <span class="item-label">Email:</span>
+              <a href="mailto:info@pro-luce.com" class="item-value">info@pro-luce.com</a>
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Interactive Mini-Game Overlay Modal -->
+  <div id="game-modal" class="game-modal-overlay">
+    <div class="game-modal-card">
+      <div class="game-modal-header">
+        <div class="game-title">
+          <span class="game-badge">ARCADE</span> Plug Connect
+        </div>
+        <div class="game-highscore">
+          🏆 BEST: <span id="highscore-val">0</span>
+        </div>
+        <button id="close-game-btn" class="game-close-btn" aria-label="Close game">&times;</button>
+      </div>
+
+      <div class="game-scoreboard">
+        <div class="score-badge">SCORE: <span id="score-val">0</span></div>
+        <div class="combo-badge">COMBO: <span id="combo-val">x1</span></div>
+        <div class="lives-badge">LIVES: <span id="lives-val">❤️❤️❤️</span></div>
+      </div>
+
+      <div class="canvas-wrapper">
+        <canvas id="game-canvas" width="800" height="520"></canvas>
+
+        <!-- Game Over Screen Overlay -->
+        <div id="game-over-screen" class="game-over-modal">
+          <h2>GAME OVER</h2>
+          <p class="final-score-text">SCORE: <span id="final-score">0</span></p>
+          <p class="final-highscore-text">BEST: <span id="final-highscore">0</span></p>
+          <button id="restart-game-btn" class="restart-btn">⚡ Play Again</button>
+        </div>
+      </div>
+
+      <!-- Controls bar -->
+      <div class="game-controls-bar">
+        <span class="controls-hint">⌨️ Controls: <b>← / →</b> or Mouse/Touch to slide plug</span>
+        <div class="touch-controls">
+          <button id="touch-left" class="touch-btn">◄ LEFT</button>
+          <button id="touch-right" class="touch-btn">RIGHT ►</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

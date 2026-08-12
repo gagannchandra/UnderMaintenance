@@ -1,0 +1,13 @@
+{
+  "name": "sravni-maintenance-placeholder",
+  "version": "1.0.0",
+  "description": "Exact pixel-perfect maintenance placeholder webpage deployable on Vercel",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y serve .",
+    "dev": "npx -y serve ."
+  },
+  "keywords": ["maintenance", "placeholder", "vercel"],
+  "author": "",
+  "license": "MIT"
+}
