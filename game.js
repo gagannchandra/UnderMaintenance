@@ -5,6 +5,25 @@
 (function () {
   'use strict';
 
+  // Canvas roundRect Polyfill for Older Browsers
+  if (typeof CanvasRenderingContext2D !== 'undefined' && !CanvasRenderingContext2D.prototype.roundRect) {
+    CanvasRenderingContext2D.prototype.roundRect = function (x, y, w, h, r) {
+      const radius = typeof r === 'number' ? r : (r[0] || 0);
+      this.beginPath();
+      this.moveTo(x + radius, y);
+      this.lineTo(x + w - radius, y);
+      this.quadraticCurveTo(x + w, y, x + w, y + radius);
+      this.lineTo(x + w, y + h - radius);
+      this.quadraticCurveTo(x + w, y + h, x + w - radius, y + h);
+      this.lineTo(x + radius, y + h);
+      this.quadraticCurveTo(x, y + h, x, y + h - radius);
+      this.lineTo(x, y + radius);
+      this.quadraticCurveTo(x, y, x + radius, y);
+      this.closePath();
+      return this;
+    };
+  }
+
   // Web Audio Synthesizer for Zero-Asset Sound Effects
   class SoundFX {
     constructor() {
