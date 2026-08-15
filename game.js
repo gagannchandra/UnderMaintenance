@@ -155,11 +155,13 @@
     ctx = canvas.getContext('2d');
 
     const openBtn = document.getElementById('open-game-btn');
+    const openMobileBtn = document.getElementById('open-game-btn-mobile');
     const illustration = document.querySelector('.illustration-container');
     const closeBtn = document.getElementById('close-game-btn');
     const restartBtn = document.getElementById('restart-game-btn');
 
     if (openBtn) openBtn.addEventListener('click', openGameModal);
+    if (openMobileBtn) openMobileBtn.addEventListener('click', openGameModal);
     if (illustration) {
       illustration.style.cursor = 'pointer';
       illustration.addEventListener('click', openGameModal);
